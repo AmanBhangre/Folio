@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'router.dart';
 import 'services/cloud_sync.dart';
@@ -9,6 +10,10 @@ import 'theme/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // The fonts ship in assets/google_fonts/, so Folio never fetches them over
+  // the network. With fetching off, a weight that has no file falls back to
+  // the nearest bundled weight of the same family.
+  GoogleFonts.config.allowRuntimeFetching = false;
   await CloudSync.init();
   final services = await AppServices.start();
   final games = await services.library.load();

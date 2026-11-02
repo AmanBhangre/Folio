@@ -70,12 +70,6 @@ class ImportScreen extends ConsumerWidget {
           FolioButton(label: 'Browse files', icon: FolioIcons.folder, kind: ButtonKind.primary, onPressed: () => _pick(ref)),
         ]),
       ),
-      Section(label: 'Other ways in', children: [
-        FolioList(children: const [
-          FolioItem(icon: FolioIcons.share, title: 'Share sheet', subtitle: 'From Safari, Chrome or Downloads'),
-          FolioItem(icon: FolioIcons.open, title: 'Open with Folio', subtitle: 'Tap a zip in any file app'),
-        ]),
-      ]),
     ];
   }
 

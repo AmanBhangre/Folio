@@ -15,6 +15,9 @@ what you play.
 **Discord:** https://discord.gg/7aDA2AxtgN — downloads, bug reports, and votes
 on what gets built next.
 
+**F95zone:** [the Folio thread](https://f95zone.to/threads/folio-play-html-twine-and-rpg-maker-mv-mz-games-offline-on-android-iphone-coming.321256/)
+— questions and "does game X work?" reports.
+
 ## Install
 
 ### Android
